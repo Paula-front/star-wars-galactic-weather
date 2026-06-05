@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-deep:    #02040a;
+  --bg-card:    #0a0f1e;
+  --bg-glass:   rgba(10, 15, 30, 0.75);
+  --border:     rgba(255,255,255,0.08);
+  --text-main:  #e8eaf6;
+  --text-muted: #6b7280;
+  --text-dim:   #374151;
+  --gold:       #fbbf24;
+  --gold-glow:  rgba(251,191,36,0.25);
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg-deep);
+  color: var(--text-main);
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }

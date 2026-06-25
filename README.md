@@ -1,166 +1,192 @@
-# 🌌 Galactic Weather – Star Wars Climate Monitor
+# 🌌 Star Wars Galactic Weather
 
-## Descripción
+![Vue 3](https://img.shields.io/badge/Vue%203-42B883?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![Vue Router](https://img.shields.io/badge/Vue%20Router-4-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Galactic Weather es una aplicación SPA (Single Page Application) desarrollada con Vue.js e inspirada en el universo Star Wars. La aplicación permite explorar distintos planetas de la galaxia, consultar sus condiciones climáticas y visualizar información detallada mediante una interfaz temática con diseño espacial.
+Aplicación **SPA** desarrollada con **Vue 3** y **Vite**, inspirada en el universo de **Star Wars**, que permite explorar el clima de distintos planetas mediante una interfaz moderna e interactiva.
 
-El proyecto fue desarrollado como parte del Módulo 6 de Desarrollo de Interfaces Interactivas con Vue.js.
-
----
-
-## Características principales
-
-- Aplicación SPA desarrollada con Vue.js.
-- Navegación mediante Vue Router.
-- Listado de planetas con información climática.
-- Búsqueda dinámica de planetas.
-- Vista de detalle por planeta.
-- Pronóstico semanal.
-- Resumen galáctico.
-- Alertas climáticas.
-- Fondo espacial animado.
-- Interfaz inspirada en la estética de Star Wars.
+El proyecto fue desarrollado para fortalecer habilidades en **Vue Router**, **componentes reutilizables**, **props**, **estado reactivo**, **filtrado dinámico** y **navegación entre vistas**, aplicando un diseño visual inspirado en la saga.
 
 ---
 
-## Vistas principales
+# 📑 Índice
 
-### Home (`/`)
-
-La vista principal muestra:
-
-- Listado de planetas.
-- Información climática actual.
-- Buscador de planetas.
-- Filtros de visualización.
-- Resumen galáctico.
-- Alertas climáticas.
-
-### Detalle de Planeta (`/planeta/:id`)
-
-La vista de detalle permite visualizar:
-
-- Información general del planeta.
-- Temperatura actual.
-- Pronóstico semanal.
-- Estadísticas climáticas.
-- Navegación de regreso a la página principal.
+- [🚀 Demo](#-demo)
+- [✨ Características](#-características)
+- [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
+- [📂 Estructura del proyecto](#-estructura-del-proyecto)
+- [📸 Capturas](#-capturas)
+- [⚙️ Instalación](#️-instalación)
+- [💡 Funcionalidades destacadas](#-funcionalidades-destacadas)
+- [🔮 Mejoras futuras](#-mejoras-futuras)
+- [👩‍💻 Autor](#-autor)
+- [📄 Licencia](#-licencia)
 
 ---
 
-## Rutas configuradas
+# 🚀 Demo
 
-| Ruta | Descripción |
-|--------|-------------|
-| `/` | Página principal con el listado de planetas |
-| `/planeta/:id` | Vista de detalle para un planeta específico |
+🌐 **Aplicación en línea:**  
+https://star-wars-galactic-weather.vercel.app/#/
 
-La navegación se realiza mediante Vue Router sin recargar la página.
+💻 **Repositorio GitHub:**  
+https://github.com/Paula-front/star-wars-galactic-weather
 
 ---
 
-## Tecnologías utilizadas
+# ✨ Características
 
-- Vue.js 3
+- 🌍 Exploración de planetas inspirados en Star Wars.
+- 🔍 Búsqueda dinámica por nombre.
+- 🌡️ Conversión entre grados Celsius y Fahrenheit.
+- 🛰️ Filtros por tipo de clima.
+- 📊 Resumen climático galáctico.
+- ⚠️ Panel de alertas climáticas.
+- 📅 Pronóstico de varios días.
+- 🪐 Vista detallada de cada planeta.
+- ⚡ Navegación mediante Vue Router.
+- 📱 Diseño responsive.
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+- Vue 3
 - Vue Router
 - Vite
-- JavaScript
-- CSS
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
 ---
 
-## Estructura del proyecto
+# 📂 Estructura del proyecto
 
 ```text
-src/
-├── components/
-│   └── StarBackground.vue
-├── data/
-│   └── planets.js
-├── router/
-│   └── index.js
-├── styles/
-│   └── global.css
-├── views/
-│   ├── HomeView.vue
-│   └── PlanetDetail.vue
-├── App.vue
-└── main.js
+star-wars-galactic-weather/
+│
+├── docs/
+│   └── screenshots/
+│       ├── home.png
+│       ├── filters.png
+│       └── detail.png
+│
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── router/
+│   ├── styles/
+│   ├── views/
+│   ├── App.vue
+│   └── main.js
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 ```
-
-### Componentes principales
-
-- **App.vue:** componente raíz de la aplicación.
-- **StarBackground.vue:** fondo espacial animado.
-- **HomeView.vue:** vista principal con listado de planetas y filtros.
-- **PlanetDetail.vue:** vista de detalle y pronóstico.
-- **router/index.js:** configuración de rutas.
-- **planets.js:** datos utilizados por la aplicación.
-
-
-## Funcionalidades de Vue utilizadas
-
-- Interpolación de datos con `{{ }}`.
-- Renderizado de listas mediante `v-for`.
-- Renderizado condicional con `v-if` y `v-show`.
-- Enlace bidireccional con `v-model`.
-- Manejo de eventos con `@click`.
-- Eventos de teclado con `@keyup.enter`.
-- Componentes reutilizables.
-- Rutas dinámicas mediante parámetros (`/planeta/:id`).
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+# 📸 Capturas
 
-### Requisitos previos
+## 🏠 Página principal
 
-- Node.js 18+
-- npm 9+
+![Inicio](docs/screenshots/home.png)
 
-### Pasos
+---
+
+## 🔍 Búsqueda y filtros
+
+![Filtros](docs/screenshots/filters.png)
+
+---
+
+## 🪐 Detalle del planeta
+
+![Detalle](docs/screenshots/detail.png)
+
+---
+
+# ⚙️ Instalación
+
+### Clonar el repositorio
 
 ```bash
-# 1. Clonar el repositorio
 git clone https://github.com/Paula-front/star-wars-galactic-weather.git
+```
 
-# 2. Ingresar a la carpeta del proyecto
+### Ingresar al proyecto
+
+```bash
 cd star-wars-galactic-weather
+```
 
-# 3. Instalar dependencias
+### Instalar dependencias
+
+```bash
 npm install
+```
 
-# 4. Ejecutar en modo desarrollo
+### Ejecutar en modo desarrollo
+
+```bash
 npm run dev
 ```
 
-Abrir en el navegador:
-
-```text
-http://localhost:5173
-```
-
-### Build para producción
+### Compilar para producción
 
 ```bash
 npm run build
+```
+
+### Previsualizar el proyecto compilado
+
+```bash
 npm run preview
 ```
 
 ---
 
-## Repositorio GitHub
+# 💡 Funcionalidades destacadas
 
-El código fuente del proyecto se encuentra disponible en:
-
-https://github.com/Paula-front/star-wars-galactic-weather
+- Navegación SPA mediante Vue Router.
+- Componentes reutilizables.
+- Filtrado dinámico por tipo de clima.
+- Búsqueda reactiva en tiempo real.
+- Conversión de unidades de temperatura.
+- Vista detallada para cada planeta.
+- Pronóstico extendido.
+- Panel de resumen climático.
+- Alertas meteorológicas.
+- Diseño inspirado en la interfaz de Star Wars.
+- Organización modular del código.
 
 ---
 
-## Autor
+# 🔮 Mejoras futuras
 
-Paula Front
+- Consumo de una API meteorológica real.
+- Sistema de favoritos.
+- Persistencia mediante Local Storage.
+- Animaciones y transiciones.
+- Modo claro / oscuro.
+- Internacionalización (i18n).
+- Más planetas y categorías climáticas.
 
-Proyecto desarrollado para el **Módulo 6 – Desarrollo de Interfaces Interactivas con Vue.js**.
+---
 
-May the Force — and good weather — be with you ✦
+# 👩‍💻 Autor
+
+**Paula Pérez Valenzuela**
+
+Proyecto desarrollado como parte del **Bootcamp Desarrollo de Aplicaciones Front-End Trainee**, aplicando Vue 3, Vue Router y Vite para el desarrollo de aplicaciones SPA modernas.
+
+---
+
+# 📄 Licencia
+
+Este proyecto fue desarrollado con fines educativos y de aprendizaje.
